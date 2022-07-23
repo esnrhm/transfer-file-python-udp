@@ -10,7 +10,7 @@ def send(address, filename):
     SEPARATOR = '/'
     host, port = address
 
-    Buffersize =65507
+    Buffersize =4096*10
     filename = filename
     file_size = os.path.getsize(filename)
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)

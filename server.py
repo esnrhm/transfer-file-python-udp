@@ -15,7 +15,7 @@ def write_to_file(list_,file_name):
 def recvived(address, port):
 
     SEPARATOR = '/'
-    Buffersize = 65507
+    Buffersize = 4096*10
 
     while True:
         print(' Prepare to receive new files ...')
